@@ -19,10 +19,6 @@ Translations for the [Menyoo](https://github.com/itsjustcurtis/MenyooSP) trainer
 **English** · [Русский](README.ru.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Português](README.pt.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Čeština](README.cs.md) · [Nederlands](README.nl.md) · [Türkçe](README.tr.md) · [日本語](README.ja.md) · [简体中文](README.zh.md) · [繁體中文](README.zh-TW.md) · [한국어](README.ko.md)
 
 </div>
-<p align="center">
-  <a href="assets/menyoo-language-packs-ad.mp4"><img src="assets/ad-poster.png" alt="Menyoo Language Packs — overview" width="100%"></a>
-  <br><sub>▶ 13-second overview — MP4, 1280×720, 1.3 MB</sub>
-</p>
 
 
 ---
@@ -148,7 +144,6 @@ install.bat                one-click installer for Windows
 CONTRIBUTING.md            fix a string in 3 minutes
 TRANSLATORS.md             credit table
 tools/make_social_preview.py  re-render the social card via headless Chrome
-assets/ad.html + tools/make_ad.py  the video ad, re-rendered via Chrome + ffmpeg
 .github/workflows/         CI: validator + edge spaces on every push
 README.<lang>.md           docs in 16 languages
 ```

@@ -19,10 +19,6 @@
 [English](README.md) · **Русский** · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Português](README.pt.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Čeština](README.cs.md) · [Nederlands](README.nl.md) · [Türkçe](README.tr.md) · [日本語](README.ja.md) · [简体中文](README.zh.md) · [繁體中文](README.zh-TW.md) · [한국어](README.ko.md)
 
 </div>
-<p align="center">
-  <a href="assets/menyoo-language-packs-ad.mp4"><img src="assets/ad-poster.png" alt="Menyoo Language Packs — overview" width="100%"></a>
-  <br><sub>▶ обзор за 13 секунд — MP4, 1280×720, 1.3 МБ</sub>
-</p>
 
 
 ---
@@ -148,7 +144,6 @@ install.bat                установка в один клик для Window
 CONTRIBUTING.md            как починить строку за 3 минуты
 TRANSLATORS.md             таблица авторов переводов
 tools/make_social_preview.py  перегенерация карточки через headless Chrome
-assets/ad.html + tools/make_ad.py  видео-реклама, рендер через Chrome + ffmpeg
 .github/workflows/         CI: валидатор и пробелы на каждый push
 README.<lang>.md           документация на 16 языках
 ```
