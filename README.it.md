@@ -41,6 +41,12 @@ python tools/translate.py --pack Italian --target IT --backend google   # riempi
 
 Documentazione completa (inglese/russo): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Crediti
 
 Menyoo — MAFINS / itsjustcurtis · traduzioni e strumenti — MIT ([LICENSE](LICENSE)).

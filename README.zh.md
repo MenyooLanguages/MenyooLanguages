@@ -41,6 +41,12 @@ python tools/translate.py --pack Chinese --target ZH --backend google   # 补齐
 
 完整文档（英文/俄文）：[README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 致谢
 
 Menyoo — MAFINS / itsjustcurtis · 本仓库的翻译与工具 — MIT（见 [LICENSE](LICENSE)）。

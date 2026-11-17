@@ -41,6 +41,12 @@ python tools/translate.py --pack French --target FR --backend google   # combler
 
 Documentation complète (anglais/russe) : [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Crédits
 
 Menyoo — MAFINS / itsjustcurtis · traductions et outils — MIT ([LICENSE](LICENSE)).

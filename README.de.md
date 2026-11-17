@@ -41,6 +41,12 @@ python tools/translate.py --pack German --target DE --backend google   # Lücken
 
 Volle Dokumentation (Englisch/Russisch): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Credits
 
 Menyoo — MAFINS / itsjustcurtis · Übersetzungen und Tools hier — MIT ([LICENSE](LICENSE)).

@@ -1,0 +1,85 @@
+name: Translation fix
+description: A string in your language reads wrong, is truncated or clashes with the official game localization
+title: "[translation] <language>: <short description>"
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One corrected line is a real contribution — no git knowledge needed.
+        Keys (the English text on the left) must stay untouched, only the translated value changes.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language pack
+      options:
+        - Russia.json
+        - English.json
+        - French.json
+        - German.json
+        - Spanish.json
+        - Italian.json
+        - Portuguese.json
+        - Polish.json
+        - Ukrainian.json
+        - Czech.json
+        - Dutch.json
+        - Turkish.json
+        - Japanese.json
+        - Chinese.json
+        - ChineseTraditional.json
+        - Korean.json
+    validations:
+      required: true
+
+  - type: input
+    id: key
+    attributes:
+      label: English key (the text on the left side)
+      placeholder: Infinite Ammo In Clip
+    validations:
+      required: true
+
+  - type: input
+    id: current
+    attributes:
+      label: Current translation
+      placeholder: Unendlich Munition im Magazin
+    validations:
+      required: true
+
+  - type: input
+    id: suggested
+    attributes:
+      label: Better translation
+      placeholder: Unbegrenzte Munition im Magazin
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is the current one wrong?
+      description: Grammar, wrong term, wrong gender, truncated in the menu, terms differ from the official GTA V localization…
+      placeholder: The official German localization calls the magazine "Magazin", but the game shows the string cut off after 28 characters.
+    validations:
+      required: false
+
+  - type: input
+    id: menu
+    attributes:
+      label: Where do you see it in game?
+      placeholder: Vehicle Options → Weapons → Infinite Ammo
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks
+      options:
+        - label: Markers like ~r~ ~s~ and placeholders like %s / %d are kept in my suggestion
+          required: true
+        - label: I am fine with being listed in TRANSLATORS.md
+          required: false

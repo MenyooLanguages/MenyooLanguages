@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Fix your language in 3 minutes
+    url: https://github.com/MenyooLanguages/MenyooLanguages/blob/main/CONTRIBUTING.md
+    about: Edit one value in a JSON file and open a PR — no build tools, no code.
+  - name: Which strings stay in Latin and why
+    url: https://github.com/MenyooLanguages/MenyooLanguages/blob/main/README.md#-coverage
+    about: Model names, FX ids and animation lists are asset identifiers, not UI text.

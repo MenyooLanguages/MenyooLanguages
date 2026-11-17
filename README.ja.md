@@ -41,6 +41,12 @@ python tools/translate.py --pack Japanese --target JA --backend google   # 未�
 
 詳細ドキュメント（英語／ロシア語）: [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 クレジット
 
 Menyoo — MAFINS / itsjustcurtis · 翻訳とツール — MIT ([LICENSE](LICENSE))。

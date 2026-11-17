@@ -41,6 +41,12 @@ python tools/translate.py --pack Polish --target PL --backend google   # uzupeł
 
 Pełna dokumentacja (angielski/rosyjski): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Autorzy
 
 Menyoo — MAFINS / itsjustcurtis · tłumaczenia i narzędzia — MIT ([LICENSE](LICENSE)).

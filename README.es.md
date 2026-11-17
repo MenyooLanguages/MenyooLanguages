@@ -41,6 +41,12 @@ python tools/translate.py --pack Spanish --target ES --backend google   # rellen
 
 Documentación completa (inglés/ruso): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Créditos
 
 Menyoo — MAFINS / itsjustcurtis · traducciones y herramientas — MIT ([LICENSE](LICENSE)).

@@ -41,6 +41,12 @@ python tools/translate.py --pack Korean --target KO --backend google   # 빈 항
 
 전체 문서(영어/러시아어): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 크레딧
 
 Menyoo — MAFINS / itsjustcurtis · 번역 및 도구 — MIT ([LICENSE](LICENSE)).

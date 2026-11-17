@@ -11,6 +11,8 @@
 [![Строк](https://img.shields.io/badge/строк-3164%20в%20пакете-blue)](#-покрытие)
 [![Лицензия](https://img.shields.io/badge/лицензия-MIT-important)](LICENSE)
 [![GTA V](https://img.shields.io/badge/GTA%20V-Enhanced%20и%20Legacy-orange)](#-установка)
+[![validate](https://github.com/MenyooLanguages/MenyooLanguages/actions/workflows/validate.yml/badge.svg)](https://github.com/MenyooLanguages/MenyooLanguages/actions/workflows/validate.yml)
+[![stars](https://img.shields.io/github/stars/MenyooLanguages/MenyooLanguages?color=e3b341)](https://github.com/MenyooLanguages/MenyooLanguages/stargazers)
 
 Перевод тренажёра [Menyoo](https://github.com/itsjustcurtis/MenyooSP) — каждая английская подпись меню на твоём языке.
 
@@ -27,6 +29,10 @@
 2. в игре:  Settings → Language → нужный язык
 3. в игре:  Settings → Reload Language Files     (или просто перезапусти игру)
 ```
+
+### В один клик (Windows)
+
+Скачай ZIP (**Code → Download ZIP**), оставь `install.bat` рядом с папкой `Language/`, запусти и перетащи в окно папку GTA V — инсталлятор скопирует все пакеты в `menyooStuff/Language/` и сохранит бэкап того, что перезапишет.
 
 Можно зафиксировать язык в `menyooStuff/menyooConfig.ini`:
 
@@ -133,6 +139,9 @@ tools/translate.py         дозаполнение пакета до 100 %
 tools/validate.py          строгая валидация
 tools/fix_edge_spaces.py   починка пробелов по краям
 assets/                    banner.svg + social-preview.png (1280x640)
+install.bat                установка в один клик для Windows
+CONTRIBUTING.md            как починить строку за 3 минуты
+TRANSLATORS.md             таблица авторов переводов
 tools/make_social_preview.py  перегенерация карточки через headless Chrome
 .github/workflows/         CI: валидатор и пробелы на каждый push
 README.<lang>.md           документация на 16 языках
@@ -181,6 +190,18 @@ Menyoo 2.4.4 рисует ровно 3164 переводимых подписи 
 
 Да, это один JSON-файл. Прогони валидатор и открывай PR: CI не пропустит битый JSON, потерянные маркеры и обрезанные пробелы.
 </details>
+
+---
+
+## 🤝 Помочь проекту
+
+| | |
+|:--|:--|
+| **Починить свой язык** | Поменяй одно значение в `Language/<Пакет>.json` и открой PR — 3 минуты, без кода: [CONTRIBUTING.md](CONTRIBUTING.md) |
+| **Попасть в авторы** | Каждая принятая правка попадает в [TRANSLATORS.md](TRANSLATORS.md) |
+| **Сообщить о кривой строке** | [форма «translation fix»](https://github.com/MenyooLanguages/MenyooLanguages/issues/new?template=translation-fix.yml) |
+| **Попросить новый язык** | [запрос языка](https://github.com/MenyooLanguages/MenyooLanguages/issues/new?template=new-language.yml) |
+| **Рассказать другим** | Пост в GTA-сообществе твоего языка даст больше, чем любой README |
 
 ---
 

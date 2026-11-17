@@ -41,6 +41,12 @@ python tools/translate.py --pack ChineseTraditional --target ZH-HANT --backend g
 
 完整文件（英文／俄文）：[README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 致謝
 
 Menyoo — MAFINS / itsjustcurtis · 本倉庫的翻譯與工具 — MIT（見 [LICENSE](LICENSE)）。

@@ -41,6 +41,12 @@ python tools/translate.py --pack Ukrainian --target UK --backend google   # до
 
 Повна документація (англійська/російська): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Автори
 
 Menyoo — MAFINS / itsjustcurtis · переклади й інструменти — MIT ([LICENSE](LICENSE)).

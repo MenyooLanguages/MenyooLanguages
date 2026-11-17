@@ -4,3 +4,4 @@
 *.json linguist-language=JSON
 *.png binary
 *.svg text eol=lf
+*.bat text eol=crlf

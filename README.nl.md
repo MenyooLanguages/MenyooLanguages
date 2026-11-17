@@ -41,6 +41,12 @@ python tools/translate.py --pack Dutch --target NL --backend google   # gaten vu
 
 Volledige documentatie (Engels/Russisch): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Credits
 
 Menyoo — MAFINS / itsjustcurtis · vertalingen en tools — MIT ([LICENSE](LICENSE)).

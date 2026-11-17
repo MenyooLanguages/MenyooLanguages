@@ -41,6 +41,12 @@ python tools/translate.py --pack Turkish --target TR --backend google   # eksikl
 
 Tam dokümantasyon (İngilizce/Rusça): [README.md](README.md) · [README.ru.md](README.ru.md)
 
+
+## 🤝 Help your language
+
+Fix one line in `Language/<Pack>.json` → [CONTRIBUTING.md](CONTRIBUTING.md) · credits: [TRANSLATORS.md](TRANSLATORS.md)
+
+---
 ## 🏆 Emeği geçenler
 
 Menyoo — MAFINS / itsjustcurtis · çeviriler ve araçlar — MIT ([LICENSE](LICENSE)).

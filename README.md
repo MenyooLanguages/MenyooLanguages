@@ -11,6 +11,8 @@
 [![Strings](https://img.shields.io/badge/strings-3164%20per%20pack-blue)](#-coverage)
 [![License](https://img.shields.io/badge/license-MIT-important)](LICENSE)
 [![GTA V](https://img.shields.io/badge/GTA%20V-Enhanced%20%26%20Legacy-orange)](#-installation)
+[![validate](https://github.com/MenyooLanguages/MenyooLanguages/actions/workflows/validate.yml/badge.svg)](https://github.com/MenyooLanguages/MenyooLanguages/actions/workflows/validate.yml)
+[![stars](https://img.shields.io/github/stars/MenyooLanguages/MenyooLanguages?color=e3b341)](https://github.com/MenyooLanguages/MenyooLanguages/stargazers)
 
 Translations for the [Menyoo](https://github.com/itsjustcurtis/MenyooSP) trainer — every English label Menyoo draws, in your language.
 
@@ -27,6 +29,10 @@ Translations for the [Menyoo](https://github.com/itsjustcurtis/MenyooSP) trainer
 2. in game:  Settings → Language → <your language>
 3. in game:  Settings → Reload Language Files        (or just restart the game)
 ```
+
+### One click (Windows)
+
+Download the ZIP (**Code → Download ZIP**), keep `install.bat` next to `Language/`, run it and drag your GTA V folder onto the window — it copies every pack into `menyooStuff/Language/` and backs up whatever it overwrites.
 
 Optional — pin the language in `menyooStuff/menyooConfig.ini`:
 
@@ -133,6 +139,9 @@ tools/translate.py         fill a pack to 100 % (google / yandex / libre / argos
 tools/validate.py          strict validation
 tools/fix_edge_spaces.py   edge-space repair
 assets/                    banner.svg + social-preview.png (1280x640)
+install.bat                one-click installer for Windows
+CONTRIBUTING.md            fix a string in 3 minutes
+TRANSLATORS.md             credit table
 tools/make_social_preview.py  re-render the social card via headless Chrome
 .github/workflows/         CI: validator + edge spaces on every push
 README.<lang>.md           docs in 16 languages
@@ -181,6 +190,18 @@ Yes. Language packs are read by Menyoo itself, independent of the game build —
 
 Yes — one JSON file. Run the validator, open a PR; CI rejects broken JSON, lost markers and stripped edge spaces.
 </details>
+
+---
+
+## 🤝 Contribute
+
+| | |
+|:--|:--|
+| **Fix your language** | Edit one value in `Language/<Pack>.json` and open a PR — 3 minutes, no code: [CONTRIBUTING.md](CONTRIBUTING.md) |
+| **Get credited** | Every accepted fix lands in [TRANSLATORS.md](TRANSLATORS.md) |
+| **Report a bad string** | [translation fix form](https://github.com/MenyooLanguages/MenyooLanguages/issues/new?template=translation-fix.yml) |
+| **Ask for a new language** | [language request](https://github.com/MenyooLanguages/MenyooLanguages/issues/new?template=new-language.yml) |
+| **Share it** | Posting the repo in your language's GTA community is worth more than any README tweak |
 
 ---
 

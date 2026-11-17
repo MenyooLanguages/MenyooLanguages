@@ -1,0 +1,46 @@
+name: New language request
+description: Ask for a language that is not in the repo yet, or volunteer to maintain one
+title: "[language] add <language>"
+labels: ["language request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Packs are one JSON file, so a new language is a small job — the pipeline fills it in minutes.
+        Note: GTA V only ships fonts for EN, FR, IT, DE, ES, PT, PL, RU, JA, KO, ZH.
+        Arabic, Hindi, Thai and Hebrew would render as boxes and Arabic also needs RTL shaping.
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: Norsk bokmål / Magyar
+    validations:
+      required: true
+
+  - type: input
+    id: code
+    attributes:
+      label: BCP-47 / engine code, if you know it
+      placeholder: nb / hu
+    validations:
+      required: false
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: What are you offering?
+      options:
+        - Just a request, I would use the pack
+        - I can review a machine translation of it
+        - I can translate it and maintain it
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Localized GTA V terminology you care about, tone, whether the game even ships that language…
+    validations:
+      required: false
