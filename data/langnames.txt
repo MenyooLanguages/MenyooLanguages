@@ -1,0 +1,16 @@
+English
+French
+German
+Spanish
+Italian
+Portuguese
+Polish
+Ukrainian
+Russian
+Czech
+Dutch
+Turkish
+Japanese
+Chinese
+ChineseTraditional
+Korean

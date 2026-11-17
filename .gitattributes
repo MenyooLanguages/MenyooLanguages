@@ -1,0 +1,6 @@
+# keep the packs byte-stable: LF everywhere, UTF-8, no BOM
+* text=auto eol=lf
+*.json text eol=lf
+*.json linguist-language=JSON
+*.png binary
+*.svg text eol=lf

@@ -1,0 +1,109 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Menyoo Language Packs — social preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(420px 380px at 6% -6%, rgba(46,164,79,.30), transparent 70%),
+      radial-gradient(460px 420px at 100% 108%, rgba(168,85,247,.34), transparent 72%),
+      radial-gradient(360px 300px at 60% -12%, rgba(59,130,246,.20), transparent 70%),
+      linear-gradient(126deg, #0b1220 0%, #111a2e 55%, #1a1030 100%);
+    color: #f8fafc;
+    padding: 84px 80px 0;
+  }
+  .bar {
+    position: absolute; inset: 0 0 auto 0; height: 4px;
+    background: linear-gradient(90deg, transparent, #2ea44f 22%, #3b82f6 50%, #a855f7 78%, transparent);
+  }
+  .kicker {
+    font-size: 19px; font-weight: 600; letter-spacing: .32em;
+    color: #7dd3fc; text-transform: uppercase;
+  }
+  h1 { font-size: 66px; line-height: 1.02; font-weight: 700; letter-spacing: -.02em; margin: 16px 0 18px; }
+  h1 .a { color: #ffffff; }
+  h1 .b {
+    background: linear-gradient(92deg, #dbeafe, #c4b5fd 60%, #a78bfa);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { font-size: 25px; color: #9fb0c9; }
+  .sub b { color: #e2e8f0; font-weight: 600; }
+  .pills { display: flex; gap: 14px; margin-top: 30px; }
+  .pill {
+    display: flex; align-items: center; height: 44px; padding: 0 22px;
+    border-radius: 22px; font-size: 18px; font-weight: 600;
+    background: rgba(22,31,49,.9);
+    border: 2px solid rgba(255,255,255,.16);
+  }
+  .g { color: #4ade80; border-color: rgba(46,164,79,.65); }
+  .b { color: #93c5fd; border-color: rgba(59,130,246,.65); }
+  .p { color: #d8b4fe; border-color: rgba(168,85,247,.65); }
+  .a { color: #fcd34d; border-color: rgba(245,158,11,.6); }
+  .langs {
+    display: grid; grid-template-columns: repeat(8, 1fr);
+    gap: 12px; margin-top: 34px; max-width: 1120px;
+  }
+  .chip {
+    height: 40px; display: flex; align-items: center; justify-content: center;
+    border-radius: 12px; font-size: 19px; color: #cbd5e1;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(120,140,175,.28);
+    white-space: nowrap;
+  }
+  .note {
+    margin-top: 34px; font-size: 18px; color: #8296b3; display: flex; align-items: center; gap: 10px;
+  }
+  .note .ok {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%; font-size: 14px; font-weight: 700;
+    color: #4ade80; background: rgba(46,164,79,.16); border: 1px solid rgba(46,164,79,.45);
+  }
+  footer {
+    position: absolute; left: 80px; right: 80px; bottom: 44px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding-top: 18px; border-top: 1px solid rgba(120,140,175,.22);
+    font-size: 19px; color: #64748b;
+  }
+  footer .url { font-weight: 600; color: #94a3b8; letter-spacing: .01em; }
+</style>
+<div class="bar"></div>
+<div class="kicker">GTA V &middot; Menyoo Trainer</div>
+<h1><span class="a">Menyoo</span> <span class="b">Language Packs</span></h1>
+<div class="sub"><b>16 languages</b> &middot; 50&nbsp;624 translated strings &middot; <b>100&nbsp;%</b> of the interface</div>
+
+<div class="pills">
+  <div class="pill g">100 % coverage</div>
+  <div class="pill b">3164 strings / pack</div>
+  <div class="pill p">16 packs</div>
+  <div class="pill a">MIT licence</div>
+  <div class="pill a">Enhanced &amp; Legacy</div>
+</div>
+
+<div class="langs">
+  <div class="chip">English</div>
+  <div class="chip">Русский</div>
+  <div class="chip">Deutsch</div>
+  <div class="chip">Français</div>
+  <div class="chip">Español</div>
+  <div class="chip">Italiano</div>
+  <div class="chip">Português</div>
+  <div class="chip">Polski</div>
+  <div class="chip">Українська</div>
+  <div class="chip">Čeština</div>
+  <div class="chip">Nederlands</div>
+  <div class="chip">Türkçe</div>
+  <div class="chip">日本語</div>
+  <div class="chip">简体中文</div>
+  <div class="chip">繁體中文</div>
+  <div class="chip">한국어</div>
+</div>
+
+<div class="note"><span class="ok">✓</span> every pack validates clean &middot; CI runs on every push &middot; UTF-8, no BOM &middot; hand-written RU reference</div>
+
+<footer>
+  <span class="url">github.com/MenyooLanguages/MenyooLanguages</span>
+  <span>drop a JSON &rarr; Settings &rarr; Language</span>
+</footer>
