@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Menyoo Language Packs — ad</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; background: #0b1220; }
+  body {
+    position: relative;
+    font-family: "Segoe UI", "Microsoft YaHei", system-ui, -apple-system, Arial, sans-serif;
+    color: #f8fafc;
+    background: linear-gradient(122deg, #0b1220 0%, #111a2e 52%, #1a1030 100%);
+  }
+  .glow { position: absolute; border-radius: 50%; filter: blur(90px); will-change: transform; }
+  .g1 { width: 620px; height: 620px; left: -180px; top: -220px; background: rgba(46,164,79,.30); }
+  .g2 { width: 700px; height: 700px; right: -220px; bottom: -320px; background: rgba(168,85,247,.34); }
+  .g3 { width: 520px; height: 520px; left: 560px; top: -300px; background: rgba(59,130,246,.20); }
+  .bar {
+    position: absolute; top: 0; left: 0; height: 4px; width: 100%;
+    background: linear-gradient(90deg, transparent, #2ea44f 22%, #3b82f6 50%, #a855f7 78%, transparent);
+    transform-origin: left center;
+  }
+  section { position: absolute; inset: 0; padding: 92px 96px; opacity: 0; will-change: opacity, transform; }
+  .kicker { font-size: 20px; font-weight: 600; letter-spacing: .34em; text-transform: uppercase; color: #7dd3fc; }
+  h1 { font-size: 96px; line-height: .98; font-weight: 700; letter-spacing: -.03em; margin-top: 18px; }
+  h1 .b {
+    display: block;
+    background: linear-gradient(92deg, #dbeafe, #c4b5fd 58%, #a78bfa);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 { font-size: 62px; font-weight: 700; letter-spacing: -.02em; }
+  .sub { font-size: 27px; color: #9fb0c9; margin-top: 22px; }
+  .sub b { color: #e2e8f0; }
+
+  /* scene 1 */
+  #s1 .line { opacity: 0; transform: translateY(26px); }
+  #s1 .foot { position: absolute; left: 96px; bottom: 96px; font-size: 21px; color: #64748b; letter-spacing: .02em; }
+
+  /* scene 2 */
+  .grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 14px; margin-top: 44px; max-width: 1090px; }
+  .chip {
+    height: 54px; display: flex; align-items: center; justify-content: center;
+    border-radius: 14px; font-size: 22px; color: #cbd5e1; white-space: nowrap;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(120,140,175,.30);
+    opacity: 0; transform: scale(.86);
+  }
+
+  /* scene 3 */
+  .stats { display: flex; gap: 64px; margin-top: 54px; align-items: flex-end; }
+  .stat .n { font-size: 108px; font-weight: 700; line-height: .9; letter-spacing: -.03em; }
+  .stat .l { font-size: 21px; color: #8296b3; margin-top: 12px; }
+  .green { color: #4ade80; } .blue { color: #93c5fd; } .violet { color: #d8b4fe; }
+  .track { margin-top: 46px; width: 700px; height: 14px; border-radius: 7px; background: rgba(255,255,255,.08); overflow: hidden; }
+  .fill { height: 100%; width: 0; background: linear-gradient(90deg, #2ea44f, #22d3ee 60%, #a855f7); border-radius: 7px; }
+  .pills { display: flex; gap: 14px; margin-top: 40px; }
+  .pill { height: 46px; display: flex; align-items: center; padding: 0 24px; border-radius: 23px; font-size: 19px; font-weight: 600;
+          background: rgba(22,31,49,.9); border: 2px solid rgba(255,255,255,.16); color: #cbd5e1; }
+
+  /* scene 4 */
+  .term {
+    margin-top: 40px; width: 900px; border-radius: 16px; overflow: hidden;
+    background: rgba(8,12,22,.92); border: 1px solid rgba(120,140,175,.28);
+    box-shadow: 0 30px 80px rgba(0,0,0,.45);
+  }
+  .tbar { display: flex; align-items: center; gap: 8px; padding: 14px 18px; background: rgba(255,255,255,.05); }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .tname { margin-left: 10px; font-size: 15px; color: #94a3b8; font-family: Consolas, "Cascadia Mono", monospace; }
+  .tbody { padding: 22px 24px 26px; font-family: Consolas, "Cascadia Mono", monospace; font-size: 21px; line-height: 1.62; color: #cbd5e1; }
+  .tbody .p { color: #4ade80; } .tbody .o { color: #64748b; } .tbody .w { color: #fcd34d; }
+  .steps { display: flex; gap: 16px; margin-top: 30px; }
+  .step {
+    display: flex; align-items: center; gap: 14px; padding: 16px 22px; border-radius: 14px;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(120,140,175,.28); font-size: 21px; color: #cbd5e1;
+    opacity: 0; transform: translateY(14px);
+  }
+  .step .k { width: 30px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center;
+             background: rgba(46,164,79,.18); border: 1px solid rgba(46,164,79,.5); color: #4ade80; font-size: 16px; font-weight: 700; }
+
+  /* scene 5 */
+  #s5 { text-align: center; padding-top: 190px; }
+  #s5 .url { font-size: 46px; font-weight: 700; letter-spacing: -.01em; margin-top: 26px;
+             background: linear-gradient(92deg, #ffffff, #a5b4fc); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  #s5 .cta { margin-top: 30px; font-size: 26px; color: #9fb0c9; }
+  #s5 .cta b { color: #4ade80; }
+  #s5 .star { font-size: 64px; line-height: 1; }
+
+  .wm {
+    position: absolute; left: 96px; bottom: 52px; font-size: 19px; letter-spacing: .04em;
+    color: #5b6b85; opacity: 0;
+  }
+  .prog { position: absolute; left: 0; bottom: 0; height: 3px; background: rgba(168,85,247,.9); width: 0; }
+</style>
+
+<div class="glow g1" id="g1"></div>
+<div class="glow g2" id="g2"></div>
+<div class="glow g3" id="g3"></div>
+<div class="bar" id="bar"></div>
+
+<section id="s1">
+  <div class="line" data-d="0.05"><div class="kicker">GTA V &middot; Menyoo Trainer</div></div>
+  <div class="line" data-d="0.30"><h1>Menyoo<span class="b">Language Packs</span></h1></div>
+  <div class="line" data-d="0.85"><div class="sub"><b>16 languages</b> &middot; every menu, toggle and prompt</div></div>
+  <div class="foot line" data-d="1.15">3164 strings per language &middot; 100 % of the interface</div>
+</section>
+
+<section id="s2">
+  <div class="kicker">One trainer, sixteen languages</div>
+  <h2 style="margin-top:16px">16 languages</h2>
+  <div class="grid" id="grid"></div>
+  <div class="sub" style="margin-top:34px"><b>50 624</b> translated strings &middot; hand-written Russian reference</div>
+</section>
+
+<section id="s3">
+  <div class="kicker">Coverage</div>
+  <h2 style="margin-top:16px">Nothing left in English</h2>
+  <div class="stats">
+    <div class="stat"><div class="n blue" id="n1">0</div><div class="l">strings per pack</div></div>
+    <div class="stat"><div class="n green" id="n2">0 %</div><div class="l">UI coverage</div></div>
+  </div>
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <div class="pills">
+    <div class="pill">MIT licence</div>
+    <div class="pill">Enhanced &amp; Legacy</div>
+    <div class="pill">UTF-8, no BOM</div>
+    <div class="pill">CI validated</div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="kicker">Install</div>
+  <h2 style="margin-top:16px">Three minutes, no modding skills</h2>
+  <div class="term">
+    <div class="tbar">
+      <div class="dot" style="background:#ff5f57"></div>
+      <div class="dot" style="background:#febc2e"></div>
+      <div class="dot" style="background:#28c840"></div>
+      <div class="tname">install.bat</div>
+    </div>
+    <div class="tbody" id="term"></div>
+  </div>
+  <div class="steps" id="steps">
+    <div class="step"><div class="k">1</div>Settings &rarr; Language</div>
+    <div class="step"><div class="k">2</div>Reload Language Files</div>
+    <div class="step"><div class="k">3</div>Play in your language</div>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="star">⭐</div>
+  <div class="cta" style="margin-top:14px;font-size:24px;letter-spacing:.28em;color:#7dd3fc">MENYOO LANGUAGE PACKS</div>
+  <div class="url">github.com/MenyooLanguages/MenyooLanguages</div>
+  <div class="cta">Star it &middot; fix a line in <b>your</b> language &middot; get credited</div>
+</section>
+
+<div class="wm" id="wm">github.com/MenyooLanguages/MenyooLanguages</div>
+<div class="prog" id="prog"></div>
+
+<script>
+const T = parseFloat(new URLSearchParams(location.search).get('t') || '0');
+
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = x => 1 - Math.pow(1 - x, 3);
+const io = (t, start, dur) => ease(clamp((t - start) / dur));
+
+// scene windows: [id, start, end]
+// windows overlap by exactly FADE so the crossfade keeps opacity sum at 1
+const scenes = [['s1', 0.0, 2.58], ['s2', 2.58, 5.28], ['s3', 5.28, 7.90], ['s4', 7.90, 10.30], ['s5', 10.30, 12.60]];
+const FADE = 0.24;
+for (const [id, a, b] of scenes) {
+  const el = document.getElementById(id);
+  const inA = io(T, a, FADE), outA = io(T, b - FADE, FADE);
+  el.style.opacity = (T >= a && T <= b) ? Math.min(inA, 1 - outA) : 0;
+  el.style.transform = `translateY(${(1 - inA) * 18 - outA * 10}px)`;
+}
+
+// accent bar + progress
+document.getElementById('bar').style.transform = `scaleX(${io(T, 0, 1.1)})`;
+const wm = document.getElementById('wm');
+wm.style.opacity = io(T, 1.3, 0.6) * (1 - io(T, 10.1, 0.35));
+document.getElementById('prog').style.width = `${Math.min(100, (T / 12.6) * 100)}%`;
+
+// drifting glows
+document.getElementById('g1').style.transform = `translate(${T * 14}px, ${T * 10}px)`;
+document.getElementById('g2').style.transform = `translate(${-T * 18}px, ${-T * 12}px)`;
+document.getElementById('g3').style.transform = `translate(${T * 8}px, ${T * 6}px)`;
+
+// scene 1 stagger
+document.querySelectorAll('#s1 .line').forEach(el => {
+  const d = parseFloat(el.dataset.d);
+  const p = io(T, 0.15 + d, 0.7);
+  el.style.opacity = p;
+  el.style.transform = `translateY(${(1 - p) * 26}px)`;
+});
+
+// scene 2 chips
+const LANGS = ['English', 'Русский', 'Deutsch', 'Français', 'Español', 'Italiano', 'Português', 'Polski',
+               'Українська', 'Čeština', 'Nederlands', 'Türkçe', '日本語', '简体中文', '繁體中文', '한국어'];
+const grid = document.getElementById('grid');
+LANGS.forEach(name => {
+  const d = document.createElement('div');
+  d.className = 'chip';
+  d.textContent = name;
+  grid.appendChild(d);
+});
+grid.querySelectorAll('.chip').forEach((el, i) => {
+  const p = io(T, 2.75 + i * 0.075, 0.4);
+  el.style.opacity = p;
+  el.style.transform = `scale(${0.86 + p * 0.14})`;
+});
+
+// scene 3 counters
+const c1 = io(T, 5.6, 1.1), c2 = io(T, 5.75, 1.3);
+document.getElementById('n1').textContent = Math.round(3164 * c1).toLocaleString('en-US').replace(',', ' ');
+document.getElementById('n2').textContent = `${Math.round(100 * c2)} %`;
+document.getElementById('fill').style.width = `${c2 * 100}%`;
+
+// scene 4 terminal typing
+const LINES = [
+  ['user@gtav', ' C:\\> install.bat "D:\\Games\\GTA V"'],
+  ['ok', ' Installed 16 language pack(s)'],
+  ['ok', ' Backed up 1 existing file -> _backup_25867'],
+  ['dim', ' 1) Settings -> Language -> Deutsch'],
+  ['dim', ' 2) Settings -> Reload Language Files'],
+];
+const termEl = document.getElementById('term');
+const typed = io(T, 8.0, 1.6) * LINES.reduce((n, l) => n + l[1].length, 0);
+let budget = Math.floor(typed), html = '';
+for (const [cls, text] of LINES) {
+  if (budget <= 0) break;
+  const part = text.slice(0, budget);
+  budget -= text.length;
+  const colour = cls === 'ok' ? '#4ade80' : cls === 'dim' ? '#64748b' : '#cbd5e1';
+  html += `<div><span style="color:#7dd3fc">${cls === 'dim' ? '' : ''}</span><span style="color:${colour}">${part
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')}</span></div>`;
+}
+termEl.innerHTML = html + (T < 9.7 ? '<span style="color:#4ade80">▌</span>' : '');
+document.querySelectorAll('#steps .step').forEach((el, i) => {
+  const p = io(T, 9.2 + i * 0.16, 0.4);
+  el.style.opacity = p;
+  el.style.transform = `translateY(${(1 - p) * 14}px)`;
+});
+</script>
+</html>
